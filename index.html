@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Coding - Radithya Rafa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div class="theme-toggle">
+        <button id="themeToggle" aria-label="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <div class="wrap">
+        <div class="header">
+            <div class="header-content">
+                <h1>Latihan Coding</h1>
+                <h2>Radithya Rafa</h2>
+                <h3>Belajar membuat layout website sederhana</h3>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#" class="code-example-link" data-type="html">HTML</a></li>
+                <li><a href="#" class="code-example-link" data-type="css">CSS</a></li>
+                <li><a href="#" class="code-example-link" data-type="php">PHP</a></li>
+                <li><a href="#" class="code-example-link" data-type="js">Javascript</a></li>
+            </ul>
+        </nav>
+
+        <div class="badan">
+            <div class="sidebar">
+                <div class="sidebar-title">Tutorial Links</div>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/" target="_blank">
+                        <i class="fab fa-html5"></i> HTML Dasar
+                    </a></li>
+                    <li><a href="https://www.w3schools.com/css/" target="_blank">
+                        <i class="fab fa-css3-alt"></i> CSS Dasar
+                    </a></li>
+                    <li><a href="https://www.php.net/manual/en/tutorial.php" target="_blank">
+                        <i class="fab fa-php"></i> PHP Dasar
+                    </a></li>
+                    <li><a href="https://www.w3schools.com/js/" target="_blank">
+                        <i class="fab fa-js"></i> Javascript Dasar
+                    </a></li>
+                </ul>
+
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search tutorials...">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="content">
+                <article>
+                    <h2>Welcome to My Coding Journey</h2>
+                    <div class="timestamp">Last updated: April 23, 2025</div>
+                    
+                    <p>This is a simple website created to practice and demonstrate web development skills. The layout is designed with a vintage aesthetic while maintaining modern functionality.</p>
+                    
+                    <div class="feature-box">
+                        <h3>New Features Added</h3>
+                        <ul>
+                            <li>Dark/Light Mode Toggle</li>
+                            <li>Search Functionality</li>
+                            <li>Vintage UI Elements</li>
+                            <li>Responsive Layout</li>
+                            <li>Code Examples Modal</li>
+                        </ul>
+                    </div>
+                    
+                    <p>Feel free to explore the links in the navigation menu and sidebar to learn more about web development. This project will continue to evolve as I learn more about HTML, CSS, and JavaScript.</p>
+                    
+                    <div class="quote">
+                        "Learning to code is learning to create and innovate." - Unknown
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Radithya Rafa - Latihan Coding</p>
+                <div class="social-links">
+                    <a href="https://github.com/Vanayaakira" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/antiviaque?igsh=ZjNkdDcza2J5M21k" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Code Example Modal -->
+    <div id="codeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modalTitle">Example Code</h2>
+            <pre id="codeExample"><code></code></pre>
+            <a id="learnMoreLink" href="#" target="_blank" class="learn-more-btn">Learn More</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
